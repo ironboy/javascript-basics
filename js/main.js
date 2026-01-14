@@ -1,16 +1,18 @@
 import createHtmlElements from "./create-html-elements.js";
 import createFooter from "./create-footer.js";
 import createHeader from "./create-header.js";
-import renderProducts from "./products.js";
+import router from "./router.js";
 
 // create and get references to html elements
-let { main } = createHtmlElements();
+let { header, main, footer } = createHtmlElements();
 
 // add header content
-createHeader();
+createHeader(header);
 
 // add the footer content
-createFooter();
+createFooter(footer);
 
-// call the render products function
-renderProducts(main);
+// use the router when the page loads
+// and when the location hash changes
+router(main);
+window.addEventListener('hashchange', () => router(main));

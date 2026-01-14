@@ -1,6 +1,6 @@
 export default async function createHeader(header) {
   let menuItems = await (await fetch('json/menu.json')).json();
-  document.querySelector('header').innerHTML = `
+  header.innerHTML = `
     <div class="logo">Our Company</div>
     <input type="checkbox" id="menu-toggle">
     <label for="menu-toggle">☰</label>

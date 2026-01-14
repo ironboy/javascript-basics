@@ -1,4 +1,4 @@
-export default async function createFooter() {
+export default async function createFooter(footer) {
   // read footer content from file (a small html snippet)
   let content = await (await fetch('html-parts/footer-content.html')).text();
   // read menu items
@@ -11,5 +11,5 @@ export default async function createFooter() {
   content = content.replace('{menu-items}', menuLinks);
 
   // replace the html inside footer with the content we've read from file
-  document.querySelector('footer').innerHTML = content;
+  footer.innerHTML = content;
 }

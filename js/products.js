@@ -17,8 +17,9 @@ export default async function renderProducts(main) {
   // Render products ot the main element
   // (why a /*html*/ comment? to trigger the VSC extension leet for higligthing)
   main.innerHTML = `
-  <h1>Our products</h1>
-  <p>Our amazing products</p>
+  <img class="hero" src="images/products.webp" alt="Our beautiful organic products on sdifferent shelf.">
+  <h1>Our organic products</h1>
+  <p>Our amazing organic products:</p>
   ${products.map(({ name, description, price }) => /*html*/`
     <article>
       <h3>${name}</h3>

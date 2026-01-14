@@ -13,11 +13,11 @@ document.querySelector('body').append(main);
 main.innerHTML = `
   <h1>Our products</h1>
   <p>Our amazing products</p>
-  ${products.map(product => /*html*/`
+  ${products.map(({ name, description, price }) => /*html*/`
     <article>
-      <h3>${product.name}</h3>
-      <p>${product.description}</p>
-      <p><b>Price:</b> ${product.price} SEK</p>
+      <h3>${name}</h3>
+      <p>${description}</p>
+      <p><b>Price:</b> ${price} SEK</p>
     </article>
   `).join('')}
 `;

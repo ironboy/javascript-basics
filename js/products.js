@@ -12,7 +12,7 @@ export default async function renderProducts(main) {
   // await responseObject.json() -> convert from json to a JS data structure
   // await -> wait for things that take time - reading data from an url, text from a file
   // note: products is an array of objects
-  let products = await (await fetch('products.json')).json();
+  let products = await (await fetch('json/products.json')).json();
 
   // Render products ot the main element
   // (why a /*html*/ comment? to trigger the VSC extension leet for higligthing)

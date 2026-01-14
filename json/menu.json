@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Welcome",
+    "slug": "welcome"
+  },
+  {
+    "label": "About us",
+    "slug": "about-us"
+  },
+  {
+    "label": "Products",
+    "slug": "products"
+  }
+]

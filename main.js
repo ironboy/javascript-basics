@@ -20,7 +20,7 @@ for (let product of products) {
     <article>
       <h3>${product.name}</h3>
       <p>${product.description}</p>
-      <p><b>Price:</b> ${product.price}</p>
+      <p><b>Price:</b> ${product.price} SEK</p>
     </article>
   `;
 }

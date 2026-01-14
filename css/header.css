@@ -25,6 +25,13 @@ header {
     &:last-child {
       padding-right: 0;
     }
+
+    &.active {
+      color: white;
+      text-decoration: underline;
+      text-underline-offset: 7px;
+      text-decoration-thickness: 2px;
+    }
   }
 
 }

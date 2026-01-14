@@ -17,4 +17,10 @@ export default async function router(main) {
   }
   // scroll to top of page
   window.scrollTo(0, 0);
+  // delete all active classes on menu items
+  for (let aElement of document.querySelectorAll('header a')) {
+    aElement.classList.remove('active');
+  }
+  // mark active menu item in header
+  document.querySelector(`header a[href="#${hash}"]`).classList.add('active');
 }

@@ -14,7 +14,6 @@ export default async function renderProducts(main) {
   // note: products is an array of objects
   let products = await (await fetch('products.json')).json();
 
-
   // Render products ot the main element
   // (why a /*html*/ comment? to trigger the VSC extension leet for higligthing)
   main.innerHTML = `

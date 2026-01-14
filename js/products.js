@@ -21,7 +21,7 @@ export default async function renderProducts(main) {
   <h1>Our organic products</h1>
   <p>Our amazing organic products:</p>
   ${products.map(({ name, description, price }) => /*html*/`
-    <article>
+    <article class="product">
       <h3>${name}</h3>
       <p>${description}</p>
       <p><b>Price:</b> ${price} SEK</p>

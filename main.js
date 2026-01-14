@@ -1,8 +1,8 @@
-let products = [
-  { name: 'Ball', price: 35, description: 'A nice rubber ball.' },
-  { name: 'Rubber duck', price: 105, description: 'For extensive rubber ducking.' },
-  { name: 'Coffee', price: 35, description: 'To prevent premature sleep and make you happy.' }
-];
+// await fetch('products.json') -> responseObject
+// await responseObject.json() -> convert from json to a JS data structure
+// await -> wait for things that take time - reading data from an url, text from a file
+// note: products is an array of objects
+let products = await(await fetch('products.json')).json();
 
 // Grab the h1 element 
 let h1 = document.querySelector('h1');

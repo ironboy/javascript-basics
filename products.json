@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Ball",
+    "price": 35,
+    "description": "A nice rubber ball."
+  },
+  {
+    "name": "Rubber duck",
+    "price": 105,
+    "description": "For extensive rubber ducking during coding."
+  },
+  {
+    "name": "Coffee",
+    "price": 35,
+    "description": "To prevent premature sleep and make you happy."
+  }
+]

@@ -1,0 +1,5 @@
+:root {
+  --bg-color-header-footer: rgb(17, 82, 20);
+  /* Are there more repetitive values
+     we could refactor in the variables?*/
+}

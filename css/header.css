@@ -1,0 +1,30 @@
+header {
+
+  position: fixed;
+  top: 0;
+
+  background-color: var(--bg-color-header-footer);
+  padding: 20px;
+
+  .logo {
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  a {
+
+    text-decoration: none;
+
+    color: rgb(200, 200, 200);
+    padding: 0 15px;
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+
+}

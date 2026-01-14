@@ -1,0 +1,49 @@
+/* Remove margin so that elements can reach the edges of the viewport */
+body {
+  /* 102px margin-top top compensate for fixed header */
+  margin: 102px 0 0;
+
+  /* But on small screen with hamburger menu the header is shorter */
+  @media screen and (max-width: 575px) {
+    margin: 66px 0 0;
+  }
+
+  line-height: 130%;
+  /* do not allow horizontal scroll */
+  overflow-x: hidden;
+}
+
+/*
+  Some user seem to get some white to the right of
+  header, main, footer - because of 100vw on images
+  or overflow-x: hidden?
+  Whatever: This fixes it!
+*/
+header,
+main,
+footer {
+  width: 100vw;
+}
+
+
+/* Spacing between text elements */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 20px 0;
+  line-height: 100%;
+}
+
+/* no margin above paragraphs */
+p {
+  margin-top: 0;
+}
+
+/* more margin between list items */
+li {
+  margin-bottom: 10px;
+}

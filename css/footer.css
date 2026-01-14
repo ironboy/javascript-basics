@@ -1,0 +1,68 @@
+footer {
+  background-color: var(--bg-color-header-footer);
+  padding: 20px 60px;
+  color: white;
+
+  /* this makes the  children of the footer
+     (in our case 3 section elements) float beside each other
+     and have equal spacing between each other */
+  @media screen and (min-width:576px) {
+
+    /* Both flex and grid can be used
+       for easy distribution of space between boxes */
+
+    /*display: flex;
+    justify-content: space-between;*/
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: rgb(221, 221, 221);
+    }
+  }
+
+  section {
+    &:not(:first-child) {
+      b {
+        display: block;
+        margin-bottom: 15px;
+      }
+    }
+
+    &:nth-child(2) {
+      @media screen and (max-width:575.98px) {
+        margin-top: 40px;
+      }
+    }
+
+    &:last-child {
+      @media screen and (max-width:899px) {
+        display: none;
+      }
+    }
+  }
+
+
+
+}
+
+/* Sticky footer logic */
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
